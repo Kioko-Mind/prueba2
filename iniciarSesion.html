@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+   <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Iniciar sesión</title>
+    <style>
+        body {
+            background-color: #e3f2fd; /* mismo fondo azul grisáceo */
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 1rem;
+        }
+
+        fieldset {
+            background: #fff;
+            border-radius: 12px;
+            padding: 2rem 3rem;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+            max-width: 400px;
+            width: 100%;
+            border: none;
+        }
+
+        legend {
+            font-size: 1.8rem;
+            font-weight: bold;
+            color: #333;
+            margin-bottom: 1.5rem;
+            padding: 0 0.5rem;
+        }
+
+        label {
+            display: block;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+            color: #555;
+        }
+
+        input[type="text"],
+        input[type="password"] {
+            width: 100%;
+            padding: 0.6rem 0.8rem;
+            margin-bottom: 1.2rem;
+            border: 1.8px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        input[type="text"]:focus,
+        input[type="password"]:focus {
+            border-color: #42a5f5;
+            outline: none;
+        }
+
+        button {
+            width: 100%;
+            background-color: #42a5f5;
+            color: white;
+            font-size: 1.1rem;
+            font-weight: 600;
+            padding: 0.8rem;
+            border: none;
+            border-radius: 10px;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #1e88e5;
+        }
+
+        .forgot-password {
+            text-align: right;
+            margin-top: 0.8rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .forgot-password a {
+            color: #42a5f5;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+
+        .forgot-password a:hover {
+            text-decoration: underline;
+        }
+
+        .crearCuenta {
+            text-align: center;
+            margin-top: 2rem;
+            color: #555;
+        }
+
+        .crearCuenta img {
+            width: 80px;
+            border-radius: 50%;
+            margin-bottom: 0.8rem;
+        }
+
+        .crearCuenta p {
+            margin: 0.3rem 0;
+            font-size: 1rem;
+        }
+
+        .crearCuenta a {
+            display: inline-block;
+            margin-top: 0.3rem;
+            color: #42a5f5;
+            font-weight: 600;
+            text-decoration: none;
+            font-size: 1rem;
+            border-bottom: 2px solid transparent;
+            transition: border-color 0.3s ease;
+        }
+
+        .crearCuenta a:hover {
+            border-color: #42a5f5;
+        }
+
+        /* Responsive */
+        @media (max-width: 420px) {
+            fieldset {
+                padding: 1.5rem 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <fieldset>
+        <legend>Iniciar sesión</legend>
+
+        <label for="nombreSesion">Nombre o email</label>
+        <input type="text" id="nombreSesion" name="nombreSesion" placeholder="Escribe tu nombre o email" />
+
+        <label for="contraseña">Contraseña</label>
+        <input type="password" id="contraseña" name="contraseña" placeholder="Escribe tu contraseña" />
+
+        <button type="submit">Iniciar sesión</button>
+
+        <div class="forgot-password">
+            <a href="https://www.fancypets.pe/">¿Has perdido tu contraseña?</a>
+        </div>
+
+        <div class="crearCuenta">
+            <img src="Logo/logoPersona.jpg" alt="Logo Persona" />
+            <p>¿No tienes cuenta aún?</p>
+            <a href="https://convertio.co/es/jpeg-jpg/">Crear una cuenta</a>
+        </div>
+    </fieldset>
+
+</body>
+</html>
+
